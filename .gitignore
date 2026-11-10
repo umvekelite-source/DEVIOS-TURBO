@@ -1,0 +1,39 @@
+# Binaries and build artifacts
+build/
+bin/
+obj/
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+*.lib
+*.a
+*.pdb
+*.exp
+*.ilk
+
+# Models and large corpus indexes
+*.gguf
+*.bin
+!/data/*.bin
+
+# Upstream llama.cpp checkout
+llama.cpp/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.DS_Store
+Thumbs.db
+
+# Logs and environment
+*.log
+.env
+.env.*
+*.tmp

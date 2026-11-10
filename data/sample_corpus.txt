@@ -1,0 +1,19 @@
+struct Transform3D {
+    float x = 0.0f;
+    float y = 0.0f;
+    float z = 0.0f;
+    float scale = 1.0f;
+    float theta = 0.0f;
+    float phi = 0.0f;
+    float alpha = 1.0f;
+    float beta = 0.0f;
+    float gamma = 0.0f;
+    float delta = 0.0f;
+    float epsilon = 0.0f;
+    float zeta = 0.0f;
+    float eta = 0.0f;
+    void reset() {
+        x = y = z = 0.0f;
+        scale = 1.0f;
+    }
+};

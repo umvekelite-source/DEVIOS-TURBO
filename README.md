@@ -136,8 +136,8 @@ devios-turbo/
 
 ### Automated Build (Windows)
 ```cmd
-git clone https://github.com/YourUsername/devios-turbo.git
-cd devios-turbo
+git clone https://github.com/umvekelite-source/DEVIOS-TURBO.git
+cd DEVIOS-TURBO
 scripts\setup_and_build.bat
 ```
 

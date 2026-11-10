@@ -1,23 +1,32 @@
-# Binaries and build artifacts
+# Build & Binaries
 build/
 bin/
 obj/
 *.exe
 *.dll
+*.asi
+*.pdb
 *.so
 *.dylib
 *.obj
 *.o
 *.lib
 *.a
-*.pdb
 *.exp
 *.ilk
 
-# Models and large corpus indexes
+# Models & Weights
 *.gguf
+models/
+corpus.bin
 *.bin
 !/data/*.bin
+
+# External Projects & Sensitive Audits
+*YimMenu*
+AUDIT_REPORT*.md
+PROJECT.md
+antigravity/
 
 # Upstream llama.cpp checkout
 llama.cpp/

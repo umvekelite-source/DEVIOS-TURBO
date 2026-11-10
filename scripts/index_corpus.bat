@@ -19,7 +19,12 @@ if not exist "%BIN%" (
 
 set "MODEL=%~1"
 if "%MODEL%"=="" (
-    set "MODEL=C:\Users\umvek\.lmstudio\models\HauhauCS\Gemma-4-E4B-Uncensored-HauhauCS-Aggressive\Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf"
+    set "MODEL=%ROOT_DIR%\models\model.gguf"
+    if not exist "!MODEL!" (
+        echo [ERROR] Model path not provided.
+        echo Usage: index_corpus.bat "path\to\model.gguf" ["path\to\input.txt"]
+        exit /b 1
+    )
 )
 
 set "INPUT=%~2"

@@ -20,12 +20,12 @@ if not exist "%BIN%" (
 :: Model path resolution
 set "MODEL=%~1"
 if "%MODEL%"=="" (
-    set "DEFAULT_MODEL=C:\Users\umvek\.lmstudio\models\HauhauCS\Gemma-4-E4B-Uncensored-HauhauCS-Aggressive\Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf"
+    set "DEFAULT_MODEL=%ROOT_DIR%\models\model.gguf"
     if exist "!DEFAULT_MODEL!" (
         set "MODEL=!DEFAULT_MODEL!"
     ) else (
-        echo [ERROR] Model path not provided and default model not found.
-        echo Usage: run_server.bat "C:\path\to\model.gguf" [port]
+        echo [ERROR] Model path not provided.
+        echo Usage: run_server.bat "path\to\model.gguf" [port]
         exit /b 1
     )
 )
